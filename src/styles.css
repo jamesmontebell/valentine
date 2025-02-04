@@ -1,0 +1,224 @@
+@import url("https://fonts.cdnfonts.com/css/melodie");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	padding-top: env(safe-area-inset-top);
+	padding-right: env(safe-area-inset-right);
+	padding-bottom: env(safe-area-inset-bottom);
+	padding-left: env(safe-area-inset-left);
+}
+
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+button:focus {
+	outline: none;
+}
+
+:root {
+	--text: #1e1018;
+	--background: #f3e7ee;
+	--primary: #63314d;
+	--secondary: #d491b7;
+	--accent: #9c356f;
+}
+
+body {
+	padding: 1rem;
+	background-color: var(--background);
+	color: var(--text);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+
+h1 {
+	font-family: "melodie";
+}
+
+p {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+img {
+	height: 8rem;
+	width: 8rem;
+}
+
+input[type="date"] {
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	color: #333;
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+
+.firstTitle {
+	opacity: 0;
+	animation: fadeInTitle 2s forwards;
+}
+
+.sub-text {
+	margin-bottom: 0.2rem;
+}
+
+.secondTitle {
+	opacity: 0;
+	animation: fadeInTitle 5s forwards;
+}
+
+.button-container {
+	opacity: 0;
+	animation: fadeInButton 6s forwards;
+}
+
+.svg-button {
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button.svg-button:focus,
+button.svg-button:active {
+	outline: none;
+	border: none;
+	box-shadow: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.yes {
+	animation: bounce 1s ease-in-out infinite;
+}
+
+.fadeOut {
+	animation: fadeOut 1s backwards;
+}
+
+.fadeIn {
+	animation: fadeIn 1s forwards;
+}
+
+.fadeInLonger {
+	animation: fadeInButton 5s forwards;
+}
+
+.gif-section {
+	margin-top: 1rem;
+}
+
+.gif {
+	height: 16rem;
+	width: 16rem;
+}
+
+.calendar {
+	all: unset;
+	display: inline-block;
+	margin: 1rem;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.next-button {
+	all: unset;
+	display: inline-block;
+	cursor: pointer;
+	padding: .3rem;
+	background-color: var(--secondary);
+	border: .15rem solid var(--primary);
+	border-radius: .5rem;
+}
+
+.options {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeInTitle {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInButton {
+	0% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: scale(1);
+	}
+
+	25% {
+		transform: scale(0.9);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	75% {
+		transform: scale(0.95);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

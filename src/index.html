@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<audio id="audio" src="./assets/frost_on_the_pines.mp3"></audio>
+		<section id="landing">
+			<div class="firstTitle">
+				<h1>Jackie,</h1>
+				<p class="sub-text">
+					I love you with all my heart.
+				</p>
+			</div>
+			<div class="secondTitle">
+				<p class="sub-text">Will you be my</p>
+				<h1>Valentine?</h1>
+			</div>
+		</section>
+		<section id="buttonContainer" class="button-container">
+			<button
+				id="yesButton"
+				class="svg-button yes"
+				type="button"
+			>
+				<img
+					src="assets/candy-heart-yes.svg"
+					alt="Icon"
+				/>
+			</button>
+			<button class="svg-button" type="button">
+				<img
+					src="assets/candy-heart-no.svg"
+					alt="Icon"
+				/>
+			</button>
+		</section>
+		<section class="button-container">
+			<img
+				id="piplup"
+				class="jump"
+				src="./assets/piplup.png"
+				alt="Icon"
+				style="
+					position: absolute;
+					bottom: 1rem;
+					right: 1rem;
+					max-width: 100px;
+					height: auto;
+				"
+			/>
+			<p
+				id="piplupSubText"
+				style="
+					position: absolute;
+					bottom: 1.5rem;
+					right: 1.7rem;
+					max-width: 100px;
+					height: auto;
+				"
+			>
+				click me 😉
+			</p>
+		</section>
+		<section id="secondLanding">
+			<p class="sub-text">That's what I thought</p>
+			<h1 class="sub-text">Stinky</h1>
+		</section>
+		<section id="gifSection" class="hidden gif-section">
+			<img
+				class="gif"
+				src="./assets/light-skin-stare-rizz.gif"
+				alt="Gif"
+			/>
+		</section>
+		<button id="skipButton" style="display: none"></button>
+		<section id="dateSection">
+			<p>Pick a date that you wanna go on a date 🥰</p>
+			<input type="date" id="datepicker" class="calendar" />
+			<button id="dateSelected" class="next-button">
+				<p>jes</p>
+			</button>
+			<img
+				class="gif"
+				style="width: auto"
+				src="./assets/spongebob-cant-wait.gif"
+				alt="Gif"
+			/>
+		</section>
+
+		<section id="foodOption" style="display: none">
+			<div class="options">
+				<p>What food would you like to get?</p>
+				<p>My</p>
+				<h1
+					style="
+						margin-top: 0.5rem;
+						margin-bottom: 0.5rem;
+					"
+				>
+					beautiful big back
+				</h1>
+				<p
+					style="
+						margin-top: 0.5rem;
+						margin-bottom: 0.5rem;
+					"
+				>
+					wife ❤️
+				</p>
+				<div
+					style="
+						display: flex;
+						flex-wrap: wrap; /* Allow items to wrap */
+						width: 6.5rem;
+						gap: 1rem;
+						margin-top: 0.5rem;
+					"
+				>
+					<h2 class="clickable">🍣</h2>
+					<h2 class="clickable">🍕</h2>
+					<h2 class="clickable">🥩</h2>
+					<h2 class="clickable">🌮</h2>
+					<h2 class="clickable">🍤</h2>
+					<h2 class="clickable">🍝</h2>
+				</div>
+			</div>
+		</section>
+		<section id="activityOption" style="display: none">
+			<div class="options">
+				<p>What activity would you like to do?</p>
+				<p>My</p>
+				<h1
+					style="
+						margin-top: 0.5rem;
+						margin-bottom: 0.5rem;
+					"
+				>
+					gorgeous
+				</h1>
+				<p
+					style="
+						margin-top: 0.5rem;
+						margin-bottom: 0.5rem;
+					"
+				>
+					Tiny ❤️
+				</p>
+				<div
+					style="
+						display: flex;
+						flex-wrap: wrap; /* Allow items to wrap */
+						width: 6.5rem;
+						gap: 1rem;
+						margin-top: 0.5rem;
+					"
+				>
+					<h2 class="clickableActivity">🎳</h2>
+					<h2 class="clickableActivity">🍿</h2>
+					<h2 class="clickableActivity">🕹️</h2>
+					<h2 class="clickableActivity">🌅</h2>
+					<h2 class="clickableActivity">🧺</h2>
+					<h2 class="clickableActivity">🛏️</h2>
+				</div>
+			</div>
+		</section>
+		<section id="ending" style="display: none">
+			Jackie, you're the love of my life. I know things have
+			been hard and I know I've been adding to that. But I
+			wish words could describe how appreciative I am of you.
+			The effort you put into us will never go unoticed You
+			truly are my one true love. My love for you will never
+			change. Til the bitter end ❤️.
+		</section>
+		<script src="index.ts"></script>
+	</body>
+</html>
