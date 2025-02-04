@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Vite cache
+.vite/
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
